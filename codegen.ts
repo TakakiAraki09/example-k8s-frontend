@@ -1,10 +1,10 @@
 import type { CodegenConfig } from '@graphql-codegen/cli';
+import { GRAPHQL_ENDPOINT } from './constants';
 
-const graphqlEndpoint = 'http://localhost:8080/query';
 
 const config = {
   schema: {
-    [graphqlEndpoint]: {
+    [GRAPHQL_ENDPOINT]: {
     },
   },
   documents: ['./components/**/*.ts', './components/**/*.tsx'],
